@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-	<html>
+0<!DOCTYPE html>
+	<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
@@ -13,11 +14,13 @@
 	        		<li><a href="/cv">CV</a></li>
 	    		</ul>
 			</nav>
+			<main class="page-content" aria-label="Content">
 			<div class="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
+			 </main>
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:adriandipaolo@gmail.com">email</a></li>
